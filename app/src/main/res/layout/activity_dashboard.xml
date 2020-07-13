@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_fundometer_bg"
+    tools:context=".Activity.DashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+         >
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:src="@drawable/ic_indicator_name"
+            android:layout_gravity="start"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtgoodnoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textColor="@color/goodnoon"
+                android:text="Good Afternoon"/>
+             <TextView
+                android:id="@+id/txtusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jhon"
+                android:textColor="@color/username"
+                android:textSize="40sp"/>
+        </LinearLayout>
+
+</LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="50dp"
+        android:id="@+id/txtselected"
+        android:layout_marginRight="60dp"
+        android:layout_below="@id/linear"
+         android:text="Fundometer"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="60dp"
+        android:layout_below="@+id/txtselected"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+         android:layout_above="@+id/bottom"
+         />
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+         android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+              android:background="@drawable/ic_about_exam"
+           />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_info_bulletin"
+            />
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgfundometer"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:layout_above="@+id/imgfundometer"-->
+                    <!--android:src="@drawable/select_unselect"/>-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgcourse"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:src="@drawable/select_unselect_course"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgexam"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:src="@drawable/select_unselect_exam"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgmock"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:src="@drawable/select_unselect_mock"-->
+                    <!--/>-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgpredictor"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:src="@drawable/select_unselect_predict"-->
+                    <!--android:layout_marginTop="16dp"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+
+        <!--</RelativeLayout>-->
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:id="@+id/relact"
+            android:layout_centerInParent="true"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imgfundometer"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                     android:adjustViewBounds="true"
+                    android:src="@drawable/mock_active"/>
+                <ImageView
+                    android:id="@+id/imgcourse"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                     android:adjustViewBounds="true"
+                    android:src="@drawable/mock_active"/>
+                <ImageView
+                    android:id="@+id/imgexam"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                     android:adjustViewBounds="true"
+                     android:src="@drawable/mock_active"/>
+                <ImageView
+                    android:id="@+id/imgmock"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                     android:adjustViewBounds="true"
+                    android:src="@drawable/mock_active"/>
+                <ImageView
+                    android:id="@+id/imgpredictor"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                     android:adjustViewBounds="true"
+                    android:src="@drawable/mock_active"/>
+             </LinearLayout>
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

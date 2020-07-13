@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_login_bg"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/edtusername"
+        android:layout_width="480dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        android:paddingTop="@dimen/padding_15"
+        android:paddingBottom="@dimen/padding_15"
+        android:paddingLeft="20dp"
+        android:text="raptor"
+        android:textSize="@dimen/text_size_20"
+        android:background="@drawable/edittext_bg"
+        android:hint="@string/username" />
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="480dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_20"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/edtusername"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edittext_bg"
+        android:hint="@string/password"
+        android:text="raptor"
+        android:inputType="textPassword"
+        android:paddingTop="@dimen/padding_15"
+        android:paddingBottom="@dimen/padding_15"
+        android:singleLine="true"
+        tools:ignore="RtlCompat" />
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/edtpassword"
+        android:textSize="@dimen/text_size_25"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

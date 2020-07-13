@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RaptorExpect</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="swipe_up_to_login">Swipe up to Login</string>
+</resources>
